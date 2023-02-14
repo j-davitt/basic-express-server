@@ -10,8 +10,8 @@ To practice server deployment
 
 ### Links and Resources
 
-- [GitHub Actions ci/cd]()
-- [back-end server url]()
+- [GitHub Actions ci/cd](https://github.com/j-davitt/basic-express-server/actions)
+- [back-end server url](https://basic-express-server-y3m9.onrender.com)
 
 
 ### Setup
@@ -30,7 +30,7 @@ for now I have none and do not require one
 #### Features / Routes
 
 - Feature One: Details of feature
-- GET : `/hello` - specific route to hit
+- GET : `/person` - specific route to hit
 
 #### Tests
 
