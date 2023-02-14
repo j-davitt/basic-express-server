@@ -1,7 +1,7 @@
 'use strict';
 
-const validator = (req,res,next) => {
-  if(!req.query.name){
+const validator = (req, res, next) => {
+  if (!req.query.name) {
     throw new Error('Name is required');
   } else {
     next();

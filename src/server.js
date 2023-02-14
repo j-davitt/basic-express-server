@@ -10,16 +10,19 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-app.get('/', (req,res,next) => {
+app.use(express.json());
+app.use(logger);
+
+app.get('/', (req, res, next) => {
   res.status(200).send('welcome');
 });
 
-app.get('/person', validator, (req,res,next) => {
+app.get('/person', validator, (req, res, next) => {
 
-  if(!req.query.name){
-    next();
-    return;
-  }
+  // if(!req.query.name){
+  //   next();
+  //   return;
+  // }
   let output = { name: req.query.name };
 
   res.status(200).json(output);
@@ -34,4 +37,3 @@ app.use('*', notFound);
 app.use(errorHandler);
 
 module.exports = { start, app };
-
